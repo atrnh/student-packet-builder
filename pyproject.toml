@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "student-packet-builder"
+version = "0.1.0"
+description = ""
+authors = ["Ashley Trinh <ashley@hackbrightacademy.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyPDF2 = "^2.11.2"
+requests = "^2.28.1"
+typer = "^0.7.0"
+rich = "^12.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^22.10.0"
+
+[tool.poetry.scripts]
+student-packet-builder = "student_packet_builder:app"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
